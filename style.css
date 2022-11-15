@@ -1,0 +1,64 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+body * {
+    /* border: 1px solid blue; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.header {
+    display: grid;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.buttons ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+
+.projects ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    gap: 20px;
+}
+
+.projects ul li {
+    border: 1px solid blue;
+    height: 200px;
+}
+
+.announcements ul {
+    border: 1px solid blue;
+}
+
+.trending-card {
+    border: 1px solid blue;
+}
