@@ -3,6 +3,18 @@ body {
     margin: 0;
     padding: 0;
     font-size: 100%;
+    font-family: Roboto, sans-serif;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto/);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: bold;;
 }
 
 body * {
@@ -14,8 +26,28 @@ body * {
     grid-template-columns: 1fr 5fr;
 }
 
+.sidebar {
+    background-color: #1992d4;
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-top: 5px;
+}
+
 .header {
     display: grid;
+    padding: 20px 40px;
 }
 
 .header-top {
@@ -23,14 +55,43 @@ body * {
     grid-template-columns: repeat(5, 1fr);
 }
 
+.search-bar {
+    background-color: #e2e8f0;
+    border-radius: 30px;
+    width: 600px;
+}
+
 .header-bottom {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
+.buttons ul li {
+    background-color: #1992d4;
+    color: #ffffff;
+    border-radius: 50px;
+    width: 80px;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.svg-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.projects > ul > li {
+    padding: 20px;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .buttons ul {
@@ -39,9 +100,12 @@ ul {
 }
 
 .main-content {
+    background-color: #e2e8f0;
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
 }
 
 .projects ul {
@@ -51,14 +115,28 @@ ul {
 }
 
 .projects ul li {
+    background-color: #ffffff;
     border: 1px solid blue;
     height: 200px;
+}
+
+.side-content {
+    margin-right: 30px;
 }
 
 .announcements ul {
     border: 1px solid blue;
 }
 
+.announcements ul li {
+    background-color: #ffffff;
+}
+
 .trending-card {
     border: 1px solid blue;
+    background-color: #ffffff;
+}
+
+h3 {
+    margin-bottom: 20px;
 }
